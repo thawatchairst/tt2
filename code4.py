@@ -2,5 +2,5 @@ from flask import request
 
 @app.route('/')
 def index():
-    module = int(request.args.get("module"))
-    exec("import urllib%d as urllib" % module)
+    module = request.args.get("module")
+    exec("import urllib%d as urllib" , int(module)) 
