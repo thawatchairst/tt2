@@ -7,10 +7,10 @@ def index():
 	
 @app.route('/2')
 def index2():
-    module = request.args.get("module")
-    exec("import urllib%d as urllib" % int(module)
+    module2 = request.args.get("module")
+    exec("import urllib%d as urllib" % int(module2)
 	
 @app.route('/3')
 def index3():
-    module = int(request.args.get("module"))
-    exec("import urllib%d as urllib" % module
+    module3 = int(request.args.get("module"))
+    exec("import urllib%d as urllib" % module3
