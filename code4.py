@@ -1,6 +1,6 @@
 from flask import request
 
-@app.route('/3')
+@app.route('/')
 def index():
     module = int(request.args.get("module"))
-    exec("import urllib%d as urllib" % int(module)
+    exec("import urllib%d as urllib" % module)
