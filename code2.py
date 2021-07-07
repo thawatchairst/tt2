@@ -13,4 +13,4 @@ def index2():
 @app.route('/3')
 def index3():
     module3 = int(request.args.get("module"))
-    exec("import urllib%d as urllib" % module3
+    exec("import urllib%d as urllib" % module3)
