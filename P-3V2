@@ -1,0 +1,5 @@
+@app.route('flask_redirect')
+def flask_redirect():
+    url = request.args["next"]
+    return redirect('index.html')  # Noncompliant
+
